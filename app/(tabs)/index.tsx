@@ -33,12 +33,12 @@ export default function HomeScreen() {
     },
   ];
 
-  const navItems = [
+  const navItems: { key: string; label: string; icon: any; route: '/' | '/explore' | '/login' | '/register' | '/modal' }[] = [
     { key: 'home', label: 'Home', icon: 'home' as const, route: '/' },
-    { key: 'explore', label: 'Explore', icon: 'explore' as const, route: 'explore' },
-    { key: 'login', label: 'Login', icon: 'login' as const, route: 'login' },
-    { key: 'register', label: 'Register', icon: 'person_add' as const, route: 'register' },
-    { key: 'modal', label: 'Modal', icon: 'info' as const, route: 'modal' },
+    { key: 'explore', label: 'Explore', icon: 'explore' as const, route: '/explore' },
+    { key: 'login', label: 'Login', icon: 'login' as const, route: '/login' },
+    { key: 'register', label: 'Register', icon: 'person-add' as const, route: '/register' },
+    { key: 'modal', label: 'Modal', icon: 'info' as const, route: '/modal' },
   ];
 
   return (
